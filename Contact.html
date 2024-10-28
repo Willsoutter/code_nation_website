@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>High Street Coffee</title>
+</head>
+<body>
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Drinks.html">Drinks</a></li>
+            <li><a href="Pastries.html">Pastries</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="index.html">High Street Coffee</a></li>
+            <li class="hideOnMobile"><a href="Drinks.html">Drinks</a></li>
+            <li class="hideOnMobile"><a href="Pastries.html">Pastries</a></li>
+            <li class="hideOnMobile"><a href="staff.html">Staff</a></li>
+            <li class="hideOnMobile"><a href="about.html">About</a></li>
+            <li class="hideOnMobile"><a href="Contact.html">Contact</a></li>
+            <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    
+    <br>
+    <br>
+
+    <form action="action_page.php" method="POST">
+
+    <div>
+        <div>
+            <label for="fname">Forename:</label>
+            <input type="text" id="fname" name="fname" placeholder="Example Text" required>
+        </div>
+
+        <br>
+
+        <div >
+            <label for="lname">Surname:</label>
+            <input type="text" id="lname" name="lname" placeholder="Example Text" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="pass">password:</label>
+            <input type="password" id="pass" name="pass" maxlength="12" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" placeholder="Example@gmail.com">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phone">phone #:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Example Text">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="bdate">birthdate:</label>
+            <input type="date" id="bdate" name="bdate">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="title">Title:</label>
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="title" value="Mr.">
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." name="title" value="Mrs.">
+            <label for="Other">Other.</label>
+            <input type="radio" id="Other." name="title" value="Other">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="payment">payment:</label>
+            <select id="payment" name="payment">
+                <option value="visa">visa</option>
+                <option value="mastercard">mastercard</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="subscribe">subscribe:</label>
+            <input type="checkbox" id="subscribe" name="subscribe" min="0" max="99" value="1">
+        </div>
+
+        <br>
+
+        <div>
+
+            <input type="reset">
+
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit">
+        </div>
+    </div>
+    </form>
+
+    <footer>
+        <hr>
+        <a href="index.html">Facebook</a> <a href="index.html">Twitter</a> <a href="index.html">Instagram</a> <a href="index.html">Linkedin</a> 
+    </footer>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+
+
+    </script>
+    
+</body>
+</html>
